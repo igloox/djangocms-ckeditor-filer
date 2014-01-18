@@ -1,16 +1,14 @@
 ========================
-djangocms-filer-ckeditor
+djangocms-ckeditor-filer
 ========================
 
-****
 What
-****
+====
 
 This is the bastard lovechild of ``djangocms-text-ckeditor`` and ``django-ckeditor-filer``. Use this in your DjangoCMS 3 project to insert and edit images in CKEditor using filer, **without** having to use DjangoCMS's plugin system.
 
-***
 Why
-***
+===
 
 This has a couple of advantages:
 
@@ -22,9 +20,8 @@ This has a couple of advantages:
 
    If you don't use any other plugins in your text fields, it's possible to configure CKEditor to hide the 'CMS Plugins' drop-down, so all your text editors look and work the same -- on both ``HTMLFields`` CMS text plugins, and text 'inside' the CMS, e.g., in Placeholders.
 
-****************
 How (to install)
-****************
+================
 
 This works 'on top' of ``djangocms-text-ckeditor``, so you'll need that installed. You'll also need the various modules of ``cmsplugin-filer`` installed and working.
 
@@ -69,8 +66,7 @@ This works 'on top' of ``djangocms-text-ckeditor``, so you'll need that installe
 
    That should be it!
 
-***
 Who
-***
+===
 
 This project wouldn't be possible without Divio's DjangoCMS, cmsplugin-filer by Stefan Foulis and django-ckeditor-filer by Shaun Sephton.
