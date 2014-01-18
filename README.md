@@ -69,4 +69,4 @@ This works 'on top' of ``djangocms-text-ckeditor``, so you'll need that installe
 Who
 ===
 
-This project wouldn't be possible without Divio's DjangoCMS, cmsplugin-filer by Stefan Foulis and django-ckeditor-filer by Shaun Sephton.
+This project wouldn't be possible without Divio's DjangoCMS, cmsplugin-filer by Stefan Foulis and django-ckeditor-filer by IKRESOFT.
