@@ -41,13 +41,15 @@ This works 'on top' of ``djangocms-text-ckeditor``, so you'll need that installe
 	'Filer Image'
 
    somewhere in the toolbar(s), to display the button. For example::
+   
+   
 
 	CKEDITOR_SETTINGS = {
 		'language': '',
 		'skin': 'moono',
 		'toolbar': 'CMS',
 		'contentsCss': '/static/css/fonts.css',
-			'toolbar_CMS': [
+			'toolbar_HTMLField': [
 				['Undo', 'Redo'],
 				['ShowBlocks'],
 				['Format', 'Styles'],
