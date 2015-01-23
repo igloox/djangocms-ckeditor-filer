@@ -73,7 +73,7 @@ CKEDITOR.dialog.add( 'filerImageDialog', function ( editor ) {
                 id_image.setValue("");
                 id_image.removeAttribute("value");
                 id_image_thumbnail_img = document.getById( 'id_image_thumbnail_img' );
-                id_image_thumbnail_img.setAttribute("src", editor.config.settings.static_url +'filer/icons/nofile_48x48.png');
+                id_image_thumbnail_img.setAttribute("src", editor.config.settings.static_url +'/../filer/icons/nofile_48x48.png');
                 id_image_description_txt = document.getById( 'id_image_description_txt' );
                 id_image_description_txt.setHtml("");
                 id_image_clear = document.getById( 'id_image_clear' );
@@ -137,12 +137,12 @@ CKEDITOR.dialog.add( 'filerImageDialog', function ( editor ) {
                         html:
                             '<div class="field-box field-image">' +
                                 '<label for="id_image">Image:</label>' +
-                                '<img alt="no file selected" class="quiet" src="'+ editor.config.settings.static_url +'filer/icons/nofile_48x48.png" id="id_image_thumbnail_img">' +
+                                '<img alt="no file selected" class="quiet" src="'+ editor.config.settings.static_url +'/../filer/icons/nofile_48x48.png" id="id_image_thumbnail_img">' +
                                 '&nbsp;<span id="id_image_description_txt"></span>' +
                                 '<a onclick="return showRelatedObjectLookupPopup(this);" title="Pretraži" id="lookup_id_image" class="related-lookup" href="/admin/filer/folder/last/?t=file_ptr">' +
-                                    '<img width="16" height="16" alt="Pretraži" src="'+ editor.config.settings.static_url +'admin/img/icon_searchbox.png">' +
+                                    '<img width="16" height="16" alt="Pretraži" src="'+ editor.config.settings.static_url +'/../admin/img/icon_searchbox.png">' +
                                 '</a>' +
-                                '<img width="10" height="10" style="display: none;" title="Očisti" alt="Očisti" src="'+ editor.config.settings.static_url +'admin/img/icon_deletelink.gif" id="id_image_clear">' +
+                                '<img width="10" height="10" style="display: none;" title="Očisti" alt="Očisti" src="'+ editor.config.settings.static_url +'/../admin/img/icon_deletelink.gif" id="id_image_clear">' +
                                 '<br><input type="text" id="id_image" name="image" class="vForeignKeyRawIdAdminField">' +
                             '</div>',
                     },
