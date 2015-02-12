@@ -41,27 +41,24 @@ This works 'on top' of ``djangocms-text-ckeditor``, so you'll need that installe
 	'Filer Image'
 
    somewhere in the toolbar(s), to display the button. For example::
-   
-   
 
 	CKEDITOR_SETTINGS = {
 		'language': '',
 		'skin': 'moono',
-		'toolbar': 'CMS',
-		'contentsCss': '/static/css/fonts.css',
-			'toolbar_HTMLField': [
-				['Undo', 'Redo'],
-				['ShowBlocks'],
-				['Format', 'Styles'],
-				['TextColor', 'BGColor', '-', 'PasteText', 'PasteFromWord'],
-				['Maximize', ''],
-				'/',
-				['Bold', 'Italic', 'Underline', '-', 'Subscript', 'Superscript', '-', 'RemoveFormat'],
-				['JustifyLeft', 'JustifyCenter', 'JustifyRight'],
-				['Link', 'Unlink'],
-				['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Table', 'Filer Image'],
-				['Source']
-			],
+		'toolbar': 'HTMLField',
+		'toolbar_HTMLField': [
+			['Undo', 'Redo'],
+			['ShowBlocks'],
+			['Format', 'Styles'],
+			['TextColor', 'BGColor', '-', 'PasteText', 'PasteFromWord'],
+			['Maximize', ''],
+			'/',
+			['Bold', 'Italic', 'Underline', '-', 'Subscript', 'Superscript', '-', 'RemoveFormat'],
+			['JustifyLeft', 'JustifyCenter', 'JustifyRight'],
+			['Link', 'Unlink'],
+			['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Table', 'Filer Image'],
+			['Source']
+		],
 		'extraPlugins': 'filerimage',
 		'removePlugins': 'image'
 	}
