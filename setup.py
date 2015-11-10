@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='djangocms-ckeditor-filer',
-    version='0.1.1',
+    version='0.2',
     description='Simplified CKEditor plugin for DjangoCMS with direct Django Filer integration',
     author='Stephen Watkin',
     author_email='ste@smashbang.co.uk',

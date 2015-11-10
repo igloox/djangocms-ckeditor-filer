@@ -1,10 +1,12 @@
 CKEDITOR.plugins.add( 'filerimage', {
+	lang: 'en,it',
 	icons: 'filerimage',
 	init: function( editor ) {
+		lang = editor.lang.filerimage,
 		editor.addCommand( 'filerImageDialog', new CKEDITOR.dialogCommand( 'filerImageDialog' ) );
 
 		editor.ui.addButton( 'Filer Image', {
-			label: 'Insert filer image',
+			label: lang.name,
 			command: 'filerImageDialog',
 			toolbar: 'insert',
 			icon: 'filerimage'
@@ -13,7 +15,7 @@ CKEDITOR.plugins.add( 'filerimage', {
 		if ( editor.contextMenu ) {
 			editor.addMenuGroup( 'Filer' );
 			editor.addMenuItem( 'imageItem', {
-				label: 'Edit image',
+				label: lang.edit,
 				icon: this.path + 'icons/filerimage.png',
 				command: 'filerImageDialog',
 				group: 'Filer'
@@ -25,7 +27,7 @@ CKEDITOR.plugins.add( 'filerimage', {
 				}
 			});
 		}
-
+		CKEDITOR.scriptLoader.load( this.path + '../../../../filer/js/popup_handling.js' );
 		CKEDITOR.dialog.add( 'filerImageDialog', this.path + 'dialogs/filerImageDialog.js' );
 
 		var dialog = CKEDITOR.dialog.getCurrent();
