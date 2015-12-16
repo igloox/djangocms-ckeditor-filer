@@ -1,5 +1,5 @@
 from django.http import HttpResponseNotFound
-from views import thumbnail_options, url_image
+from .views import thumbnail_options, url_image
 
 
 class ThumbnailMiddleware:
@@ -13,5 +13,5 @@ class ThumbnailMiddleware:
 
         # if the key is set but doesn't have a value (i.e., if the javascript is
         # being weird, just 404
-        if request.GET.has_key('djangocms_ckeditor_filer_image'):
+        if 'djangocms_ckeditor_filer_image' in request.GET:
             return HttpResponseNotFound()
