@@ -27,18 +27,18 @@ This works 'on top' of ``djangocms-text-ckeditor``, so you'll need that installe
 
 1. Install the package into your Python environment as usual (e.g., python setup.py install)
 
-2. Add 'djangocms_ckeditor_filer.middleware.ThumbnailMiddleware' in your MIDDLEWARE_CLASSES (this is for dynamic thumbnail generation)
+2. Add ``djangocms_ckeditor_filer.middleware.ThumbnailMiddleware`` in your ``MIDDLEWARE_CLASSES`` (this is for dynamic thumbnail generation)
 
-3. Add 'djangocms_ckeditor_filer' to your INSTALLED_APPS
+3. Add ``djangocms_ckeditor_filer`` to your ``INSTALLED_APPS``
 
-4. In your CKEDITOR_SETTINGS, add::
+4. In your ``CKEDITOR_SETTINGS``, add::
 
-  'extraPlugins': 'filerimage',
-  'removePlugins': 'image',
+    'extraPlugins': 'filerimage',
+    'removePlugins': 'image',
 
    somewhere into the main dict, and::
 
-  'Filer Image'
+    'Filer Image'
 
    somewhere in the toolbar(s), to display the button. For example::
 
