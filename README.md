@@ -2,6 +2,10 @@
 djangocms-ckeditor-filer
 ========================
 
+Deprecated
+==========
+This project has been deprecated in favour of [`django-ckeditor-filebrowser-filer`](https://github.com/nephila/django-ckeditor-filebrowser-filer) which is maintained by the same guys who do Django-CMS itself and works better with newer versions. Use that!
+
 What
 ====
 
